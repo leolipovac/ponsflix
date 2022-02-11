@@ -1,0 +1,28 @@
+{% extends "film/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="row">
+        <div class="col-8 col-md-4 mx-auto">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <legend class="mb-4 pb-2 border-bottom text-center">{% trans "Connectez vous !" %}</legend>
+                    {{ form | crispy }}
+                </div>
+
+                <div class="from-group">
+                    <button class="btn btn-outline-info" type="submit">{% trans "Connexion" %}</button>
+                </div>
+
+                <div class="border-top mt-3">
+                    <small class="text-muted">
+                        {% trans "Besoin d'un compte ?" %} <a class="ml-2"
+                                                              href="{% url 'user-register' %}">{% trans "Inscrivez-vous" %}</a>
+                    </small>
+                </div>
+
+            </form>
+        </div>
+    </div>
+{% endblock content %}

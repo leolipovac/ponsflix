@@ -1,0 +1,60 @@
+{% extends 'film/base.html' %}
+{% load i18n %}
+
+{% block content %}
+    
+    <div class="row ">
+        <div class="col-12">
+            <div class="card mt-4 d-none d-md-block">
+                <div class="card-header text-uppercase font-weight-bold ">
+                    {% trans "Films choisis pour vous" %}
+                </div>
+                <div class="card-body" style="background-color: black;">
+                    <div class="row">
+
+                        {% for film in films_aleatoire %}
+
+                            <div class="col-md-6 col-lg-3 card-film">
+
+                                <a href="{% url 'film-detail' film.id %}" class="text-white">
+                                    <div class="card card_small mt-4" style="background-color: black;">
+                                        <img class="card-img-top film_img" src="{{ film.image.url }}"
+                                             alt="image du film {{ film.title }}">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ film.title }}</h5>
+
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for film,like in likes.items %}
+            <div class="col-md-6 col-lg-3 card-film">
+
+                <a href="{% url 'film-detail' film.id %}" class="text-white">
+                    <div class="card card_small mt-4" style="background-color: black;">
+                        <img class="card-img-top film_img" src="{{ film.image.url }}"
+                             alt="image du film {{ film.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ film.title }}</h5>
+                            <h5>{{ like }}<i class=" fas fa-thumbs-up"></i></h5>
+
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

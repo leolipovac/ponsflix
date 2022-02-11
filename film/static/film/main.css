@@ -1,0 +1,110 @@
+body {
+    background: #000;
+    color: #fff;
+    margin-top: 100px;
+}
+
+
+.bg-steel {
+    background-color: #111;
+}
+
+.site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+.card_small {
+    transition: all ease-in-out .5s;
+}
+
+.card_small:hover {
+    transform: scale(1.1);
+}
+
+
+.card-header {
+    color: #000;
+}
+
+/**********************************************profile*******************************/
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+.account-heading {
+    font-size: 2.5rem;
+}
+
+.media {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    transition: all ease-in-out .5s;
+}
+
+.media:hover {
+    transform: scale(1.1);
+}
+
+/******************************************card film****************************/
+.card-film a:hover {
+    text-decoration: none;
+}
+
+.film-detail h5 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.film-detail {
+    background-color: #fff;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.film-detail img {
+    border-radius: 10px;
+}
+
+
+.film-detail-action p {
+    font-size: 30px;
+    transition: all ease-in-out .5s;
+}
+
+.film-detail-action {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.film-detail-action p:hover {
+    color: red;
+}
+
+.empty_list {
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+}
+
+
+.film-favorite p {
+    font-size: 20px;
+}
+
+
+

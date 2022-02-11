@@ -1,0 +1,39 @@
+{% extends "film/base.html" %}
+{% load i18n %}
+{% block content %}
+
+    <div class="row film-detail">
+        <div class="col-12 col-md-6 ">
+            <img src="{{ object.image.url }}" alt="un film" class="img-fluid">
+            <h3 class="text-center text-uppercase font-weight-bold mt-3">{{ object.title }}</h3>
+            <div class="film-detail-action">
+                <a href="{% url 'add-favorite-film' object.id %}">
+                    <p class="far fa-heart mr-3"></p>
+                </a>
+
+                {% if user.is_superuser %}
+                    <a href="{% url 'film-update' object.id %}">
+                        <p class="fas fa-pencil-alt"></p>
+                    </a>
+
+                    <a href="{% url 'film-delete' object.id %}">
+                        <p class="fas fa-trash"></p>
+                    </a>
+                {% endif %}
+
+                <a href="{% url 'liker' object.id %}">
+                    <p class="fas fa-thumbs-up"></p>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <h5 class="text-left">{{ object.description }}</h5>
+
+        </div>
+
+
+    </div>
+
+
+{% endblock content %}

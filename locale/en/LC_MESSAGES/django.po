@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-30 14:55+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\film\templates\film\base.html:38
+msgid "Accueil"
+msgstr "Home"
+
+#: .\film\templates\film\base.html:41
+msgid "Ma liste"
+msgstr "My list"
+
+#: .\film\templates\film\base.html:49
+msgid "Nouveau Film"
+msgstr "New Film"
+
+#: .\film\templates\film\base.html:51
+msgid "Profil"
+msgstr "Profile"
+
+#: .\film\templates\film\base.html:52
+msgid "Déconnexion"
+msgstr "Logout"
+
+#: .\film\templates\film\base.html:54
+msgid "Se connecter"
+msgstr "Login"
+
+#: .\film\templates\film\base.html:55
+msgid "S'inscrire"
+msgstr "Register"
+
+#: .\film\templates\film\film_confirm_delete.html:8
+msgid "Supprimer un film"
+msgstr "Delete a movie"
+
+#: .\film\templates\film\film_confirm_delete.html:9
+#: .\film\templates\film\film_confirm_delete.html:12
+msgid "Voulez vous vraiment supprimer le film "
+msgstr "Do you really want to delete the movie "
+
+#: .\film\templates\film\film_confirm_delete.html:13
+msgid "Annuler"
+msgstr "Cancel"
+
+#: .\film\templates\film\film_form.html:10
+msgid "Ajoutez un film !"
+msgstr "Add a movie!"
+
+#: .\film\templates\film\film_form.html:15
+msgid "Ajouter"
+msgstr "Add"
+
+#: .\film\templates\film\home.html:13
+msgid "Films choisis pour vous"
+msgstr "Movies chosen for you"
+
+#: .\film\templates\film\mylist_film.html:12
+msgid "Vous n'avez pas encore de film favoris?"
+msgstr "You don't have a favorite movie yet?"
+
+#: .\film\templates\film\mylist_film.html:13
+msgid "retournez à la liste des films "
+msgstr "return to the list of films"
+
+#: .\film\templates\film\mylist_film.html:13
+msgid "liste des film"
+msgstr "movie list"
+
+#: .\netflix\settings.py:157
+msgid "French"
+msgstr ""
+
+#: .\users\templates\users\login.html:10
+msgid "Connectez vous !"
+msgstr "Connect !"
+
+#: .\users\templates\users\login.html:15
+msgid "Connexion"
+msgstr "Login"
+
+#: .\users\templates\users\login.html:20
+msgid "Besoin d'un compte ?"
+msgstr "Need an account ?"
+
+#: .\users\templates\users\login.html:20
+msgid "Inscrivez-vous"
+msgstr "Register"
+
+#: .\users\templates\users\logout.html:6
+msgid "Vous avez été déconnecté"
+msgstr "You have been disconnected"
+
+#: .\users\templates\users\logout.html:9
+msgid "Reconnexion"
+msgstr "Reconnect"
+
+#: .\users\templates\users\profile.html:9
+msgid "éditer votre profile"
+msgstr "edit your profile"
+
+#: .\users\templates\users\profile.html:29
+msgid "Mettre à jour"
+msgstr "Mettre à jour"
+
+#: .\users\templates\users\register.html:10
+msgid "Rejoignez nous !"
+msgstr "Join us !"
+
+#: .\users\templates\users\register.html:14
+msgid "Inscrivez vous !"
+msgstr "Sign up !"
+
+#: .\users\templates\users\register.html:19
+msgid "S'identifier"
+msgstr "Login"

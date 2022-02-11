@@ -1,0 +1,32 @@
+{% extends 'film/base.html' %}
+{% load i18n %}
+{% block content %}
+    <div class="row">
+        {% if taille_mylist == 0 %}
+
+            <div class="col-12">
+                <p class="empty_list mx-auto">
+                    <i class="fas fa-sad-tear"></i>
+                </p>
+                <p class="text-center">
+                    {% trans "Vous n'avez pas encore de film favoris?" %}<br>
+                    {% trans "retournez à la liste des films " %}<a
+                        href="{% url 'film-home' %}"> {% trans "liste des film" %} </a>
+                </p>
+            </div>
+        {% else %}
+            {% for film in films %}
+                <div class="col-6 mt-4 mx-auto film-favorite card card_small mt-4" style="background-color: black;">
+                    <img src="{{ film.image.url }}" class"img-fluid mx-auto d-block">
+                    <p class="text-center font-weight-bold text-uppercase mt-1 mb-4">
+                        {{ film.title }}
+                        <a href="{% url 'remove_favorite_film' film.id %}" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </p>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+{% endblock content %}

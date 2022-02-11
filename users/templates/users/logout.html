@@ -1,0 +1,16 @@
+{% extends "film/base.html" %}
+{% load i18n %}
+{% block content %}
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto">
+            <h2>{% trans "Vous avez été déconnecté" %}</h2>
+            <div class="border-top pt-3">
+                <small class="text-muted">
+                    <a href="{% url 'login' %}">{% trans "Reconnexion" %}</a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
